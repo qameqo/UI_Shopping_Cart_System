@@ -318,7 +318,6 @@ function mapsizeandamount(size, amount, price) {
         new_object['price'] = price;
         arr.push(new_object);
     });
-    console.log(arr);
     return arr;
 }
 function avgprice(pricestr) {
