@@ -1,0 +1,343 @@
+﻿.clear {
+    clear: both;
+}
+.card {
+    background-color: #31353D;
+    margin: auto !important;
+    color: #818896;
+}
+.body-container {
+    width: 100%;
+    position: relative;
+}
+
+    .body-container .products {
+        width: 100%;
+    }
+
+        .body-container .products .product {
+            background-color: var(--cyan);
+            color: white;
+            margin: 15px 0px;
+            padding: 15px;
+        }
+
+            .body-container .products .product img {
+                float: left;
+                margin: 0px 15px 0px 0px;
+            }
+
+            .body-container .products .product button {
+                margin: 15px 0px 0px 0px;
+                background-color: black;
+                color: white;
+                border: 0px;
+                border-radius: 10px;
+                padding: 5px 10px;
+            }
+
+                .body-container .products .product button:hover {
+                    background-color: #C02800;
+                    cursor: pointer;
+                }
+.basket-add {
+    margin: 15px 0px 0px 0px;
+    background-color: black;
+    color: white;
+    border: 0px;
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+    .basket-add:hover {
+        background-color: #C02800;
+        cursor: pointer;
+    }
+    .basket-add:disabled {
+        cursor: no-drop;
+        background-color: black;
+    }
+    .body-container2 .basket-container2 .basket-icon3 {
+        position: relative;
+        color: white;
+        left: 4px;
+    }
+
+    .body-container2 .basket-container2 .basket-icon3:hover {
+        cursor: no-drop;
+    }
+
+.body-container .basket-container {
+    position: fixed;
+    z-index: 1;
+    top: 30px;
+    right: 15px;
+    height: 50px;
+    border-radius: 30px;
+    background-color: #818896;
+    color: black;
+    padding: 15px;
+    transition: width 0.5s, height 0.5s, top 0.2s;
+}
+
+        .body-container .basket-container .basket-icon {
+            color: white;
+            position: absolute;
+            top: 13px;
+            right: 17px;
+        }
+
+            .body-container .basket-container .basket-icon:hover {
+                color: var(--red);
+                cursor: pointer;
+            }
+
+        .body-container .basket-container .basket-count {
+            width: 25px;
+            height: 25px;
+            z-index: 2;
+            background-color: #C02800;
+            border-radius: 10px;
+            text-align: center;
+            position: absolute;
+            top: -5px;
+            right: -5px;
+        }
+
+            .body-container .basket-container .basket-count p {
+                padding: 0px;
+                margin: 2px 0px 0px 0px;
+                color: white;
+                font-size: 0.9rem;
+            }
+
+        .body-container .basket-container .basket-content {
+            opacity: 0;
+            width: 0px;
+            overflow: hidden;
+            transition: opacity 0.2s;
+            transition-delay: 0.4s;
+        }
+
+            .body-container .basket-container .basket-content .basket-products {
+                border-top: 1px solid white;
+                border-bottom: 1px solid white;
+                height: 200px;
+                overflow-y: auto;
+            }
+
+                .body-container .basket-container .basket-content .basket-products ul {
+                    list-style-type: none;
+                    margin: 0px;
+                    padding: 0px;
+                }
+
+                    .body-container .basket-container .basket-content .basket-products ul li {
+                        width: 100%;
+                        padding: 10px 0px;
+                    }
+
+                        .body-container .basket-container .basket-content .basket-products ul li input {
+                            margin-right: 5px;
+                            width: 50px;
+                            height: 20px;
+                        }
+
+                        .body-container .basket-container .basket-content .basket-products ul li .remove-product {
+                            color: #C02800;
+                            margin-right: 5px;
+                        }
+
+                            .body-container .basket-container .basket-content .basket-products ul li .remove-product:hover {
+                                color: #DE4800;
+                                cursor: pointer;
+                            }
+
+                        .body-container .basket-container .basket-content .basket-products ul li .amount {
+                            float: right;
+                            margin-right: 5px;
+                        }
+
+            .body-container .basket-container .basket-content .basket-total-amount {
+                margin-top: 5px;
+                float: right;
+            }
+
+            .body-container .basket-container .basket-content .basket-total {
+                margin-top: 5px;
+                float: left;
+            }
+
+            .body-container .basket-container .basket-content .basket-checkout {
+                background-color: #C02800;
+                color: white;
+                border: 0px;
+                padding: 5px 10px;
+                border-radius: 10px;
+                float: right;
+            }
+
+                .body-container .basket-container .basket-content .basket-checkout:hover {
+                    background-color: #DE4800;
+                    cursor: pointer;
+                }
+
+    .body-container .basket-scrolling {
+        top: 15px;
+    }
+
+    .body-container .open-basket {
+        height: 360px;
+        color: white;
+    }
+
+        .body-container .open-basket .basket-content {
+            opacity: 1;
+            width: 100%;
+        }
+@media (min-width: 575px) {
+    .basket-container {
+        width: 50px;
+    }
+
+    .open-basket {
+        width: 350px;
+    }
+}
+
+@media (max-width: 575px) {
+    .basket-container {
+        width: 50px;
+    }
+
+    .open-basket {
+        width: 300px;
+    }
+}
+
+
+
+.body-container2 .basket-container2 {
+    z-index: 5;
+    bottom: 30px;
+    left: 15px;
+    height: 50px;
+    border-radius: 30px;
+    background-color: #818896;
+    color: black;
+    padding: 15px;
+    transition: width 0.5s, height 0.5s, top 0.2s;
+}
+
+    .body-container2 .basket-container2 .basket-icon2 {
+        position: relative;
+        color: white;
+        left: 4px;
+    }
+
+        .body-container2 .basket-container2 .basket-icon2:hover {
+            color: var(--red);
+            cursor: pointer;
+        }
+
+    .body-container2 .basket-container2 .basket-content2 {
+        opacity: 0;
+        width: 0px;
+        overflow: hidden;
+        transition: opacity 0.2s;
+        transition-delay: 0.4s;
+    }
+
+        .body-container2 .basket-container2 .basket-content2 .basket-products2 {
+            border-top: 1px solid white;
+            border-bottom: 1px solid white;
+            height: 200px;
+            overflow-y: auto;
+        }
+
+            .body-container2 .basket-container2 .basket-content2 .basket-products2 ul {
+                list-style-type: none;
+                margin: 0px;
+                padding: 0px;
+            }
+
+                .body-container2 .basket-container2 .basket-content2 .basket-products2 ul li {
+                    width: 100%;
+                    padding: 10px 0px;
+                }
+
+                    .body-container2 .basket-container2 .basket-content2 .basket-products2 ul li input {
+                        margin-right: 5px;
+                        width: 50px;
+                        height: 20px;
+                    }
+
+                    .body-container2 .basket-container2 .basket-content2 .basket-products2 ul li .remove-product {
+                        color: #C02800;
+                        margin-right: 5px;
+                    }
+
+                        .body-container2 .basket-container2 .basket-content2 .basket-products2 ul li .remove-product:hover {
+                            color: #DE4800;
+                            cursor: pointer;
+                        }
+
+.body-container2 .basket-scrolling2 {
+    top: 15px;
+}
+
+.body-container2 .open-basket2 {
+    height: 320px;
+    color: white;
+}
+
+    .body-container2 .open-basket2 .basket-content2 {
+        opacity: 1;
+        width: 100%;
+    }
+
+@media (min-width: 575px) {
+    .basket-container2 {
+        width: 50px;
+    }
+
+    .open-basket2 {
+        width: 350px;
+    }
+}
+
+@media (max-width: 575px) {
+    .basket-container2 {
+        width: 50px;
+    }
+
+    .open-basket2 {
+        width: 300px;
+    }
+}
+.select-size input {
+    display: none;
+}
+
+.select-size label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border: 1px solid #ddd;
+    line-height: 50px;
+    cursor: pointer;
+    margin-left:4px;
+    margin-right:4px;
+}
+#small:checked ~ label[for="small"],
+#medium:checked ~ label[for="medium"],
+#large:checked ~ label[for="large"],
+#x-large:checked ~ label[for="x-large"],
+#xx-large:checked ~ label[for="xx-large"] {
+    background: #999;
+    color: #fff;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    opacity: 1;
+}
